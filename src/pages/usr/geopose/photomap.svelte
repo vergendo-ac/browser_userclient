@@ -25,7 +25,9 @@
 
     // eslint-disable-next-line no-undef
     // Cesium.Ion.defaultAccessToken = oscp_client.env["CESIUM_KEY"];
-    Cesium.Ion.defaultAccessToken = '';
+    //Cesium.Ion.defaultAccessToken = ''
+    //Current token is registered by ekaterina.mosseyko@compvision.sys, id=96188
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxM2NkZDYxYS1mZWRhLTQ0ZjEtOWQ5MC02YjQ4ZGZkZTJjOTIiLCJpZCI6ODY1MTcsImlhdCI6MTY0Nzg1NTI0MX0.phB1G670ENL31X7zgj13e6N2gLI34v3QEapa25v1YLg';
     window.CESIUM_BASE_URL = '/';
 
 
