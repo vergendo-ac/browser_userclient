@@ -136,6 +136,10 @@
                     return 'https://developer.augmented.city';
                 }
             })
+            .catch((error) => {
+                console.log(`Service is not available`);
+                return 'https://developer.augmented.city';
+            })
     }
 
     /* Determine the country code from the location stored in the EXIF data of the photo */
