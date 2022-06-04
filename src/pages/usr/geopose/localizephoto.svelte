@@ -169,12 +169,12 @@
 
     /* Load hard coded photo from server and encode it in base64 */
     function getDefaultImage() {
-        fetch('/photos/seattle_gps.jpg')
+        fetch('/photos/dit_gps3.jpg')
             .then(response => response.arrayBuffer())
             .then(buffer => {
                 imageDataBase64.set('data:image/jpeg;base64,' + btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), '')));
                 preview.src = $imageDataBase64;
-                filename = 'seattle.jpg';
+                filename = 'dit_gps3.jpg';
             })
     }
 
