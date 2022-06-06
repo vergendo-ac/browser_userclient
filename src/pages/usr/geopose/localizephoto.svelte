@@ -215,7 +215,7 @@
                 setCountryCode();
 
                 photoHasLocation = true;
-                photoLocationMessage = `<div>Lat: ${round(latAngle, 3)},</div><div>Lon: ${round(lonAngle, 3)}</div>`;
+                photoLocationMessage = `<div>Lat: ${round(latAngle, 6)},</div><div>Lon: ${round(lonAngle, 6)}</div>`;
             } else {
                 latAngle = undefined;
                 lonAngle = undefined;
