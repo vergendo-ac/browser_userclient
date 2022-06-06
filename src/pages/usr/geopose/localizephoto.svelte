@@ -81,7 +81,7 @@
         }];
     let selectedCountry = countries[3];
 
-    let round = (number) => Math.round(number * 1000) / 1000;
+    let round = (number) => Math.round(number * 1000000) / 1000000;
 
 
     /* Localisation of the photo */
@@ -102,8 +102,8 @@
 
                 geopose.set(data.geopose);
                 geoposeLocationMessage =
-                    `<div>Lat: ${round(latAngle, 3)},</div>
-                     <div>Lon: ${round(lonAngle, 3)},</div>
+                    `<div>Lat: ${round(latAngle, 6)},</div>
+                     <div>Lon: ${round(lonAngle, 6)},</div>
                      <div>Quaternion: ${$geopose.ecefPose.orientation.x}, ${$geopose.ecefPose.orientation.y},
                                         ${$geopose.ecefPose.orientation.z}, ${$geopose.ecefPose.orientation.w}</div>`;
             })
